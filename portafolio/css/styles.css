@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Open sans',sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+/* --------------- HEADER --------------- */
+
+
+
+header{
+    background: url("../img/fondo.jpg") #984087 ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 600px;
+}
+
+header .menu{
+    /* margin: 40px 0; */
+    margin-top: 40px;
+    text-align: right;
+}
+
+header .menu a{
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1em;
+}
+
+
+header .menu a:hover{
+    border-bottom: 3px solid #fff;
+}
+
+
+header .contenedor .contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0;
+}
+
+
+header .contenedor .contenedor-texto .texto{
+    border: 2px solid rgb(255,255,255,.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+header .contenedor .contenedor-texto .texto h1,
+header .contenedor .contenedor-texto .texto h2{
+    color: #fff;
+    font-weight: 300;
+    margin:0;
+}
+
+header .contenedor .contenedor-texto .texto .nombre{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .contenedor .contenedor-texto .texto .profesion{
+    font-size: 25;
+    line-height: 25px;
+
+}
+
+
+
+/* --------------- MAIN --------------- */
+
+
+
+main .contenedor {
+    overflow: visible;  
+}
+
+main .acerca-de{
+    text-align: center;
+}
+
+
+main .acerca-de .contenedor .foto {
+    margin-top: -60px;
+}
+
+main .acerca-de .contenedor .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,.2)
+}
+
+main .acerca-de .texto{
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+
+
+main .acerca-de .texto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd600d;
+    text-align: center;
+}
+
+main .acerca-de .texto .bold{
+    color:#0e90a8;
+    text-decoration: underline;
+}
+
+
+
+
+main .trabajos{
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+main .trabajos .contenedor{
+    overflow: hidden;
+
+}
+
+
+main .trabajos .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd600d;
+    text-align: center;
+}
+
+main .trabajos .contenedor .contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .trabajos .contenedor .contenedor-trabajos .trabajo{
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+
+main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 15px;
+    border: 3px solid transparent;
+}
+
+main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb img:hover{
+    border: 3px solid #000;
+}
+
+
+
+main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+}
+
+
+main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .nombre{
+    font-weight: 700;
+    color: #0e90a8; 
+    margin-bottom: 10px;
+}
+
+main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .categoria{
+    font-size: 14px;
+    color: #636363;
+}
+
+
+
+/* --------------- FOOTER --------------- */
+
+footer .contacto{
+    padding: 60px 0; 
+}
+
+
+footer .contacto .contenedor .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #be9796;
+    text-align: center;
+}
+
+footer .contacto .contenedor .fomulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+footer .contacto .contenedor .fomulario input[type="text"],
+footer .contacto .contenedor .fomulario input[type="email"],
+footer .contacto .contenedor .fomulario textarea{
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contacto .contenedor .fomulario input[type="text"]:focus,
+footer .contacto .contenedor .fomulario input[type="email"]:focus,
+footer .contacto .contenedor .fomulario textarea:focus{
+    border: 2px solid #be9796;
+}
+
+
+footer .contacto .contenedor .fomulario input[type="text"],
+footer .contacto .contenedor .fomulario input[type="email"]{
+    width: 49%;
+    margin-bottom: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+footer .contacto .contenedor .fomulario textarea{
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+
+footer .contacto .contenedor .fomulario .boton{
+    margin: auto;
+    background: #be9796;
+    color: #fff;
+    border:none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .contacto .contenedor .fomulario .boton:hover{ 
+    background: #ad8a89;
+}
+
+footer .redes-sociales {
+    background: #21091b;
+    padding: 60px 0;
+}
+footer .redes-sociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+footer .redes-sociales a{
+    color:#fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redes-sociales a:hover{
+    color:#d55cbe;
+}
+
+
+
+/* --------------- MEDIA QUERIES --------------- */
+
+
+@media screen and (max-width: 800px){
+    header .menu{
+        text-align: center;
+    }
+
+    main .trabajos .contenedor .contenedor-trabajos .trabajo{
+        width: 30%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px){
+    main .trabajos .contenedor .contenedor-trabajos .trabajo{
+        width: 46%;
+    }
+
+    header .contenedor .contenedor-texto .texto .nombre{
+        font-size:35px ;
+    }
+
+    header .contenedor .contenedor-texto .texto .profesion{
+        font-size:18px ;
+    }
+
+    footer .redes-sociales .contenedor{
+        flex-wrap: wrap;
+        padding: 20px 0;
+    } 
+
+}
