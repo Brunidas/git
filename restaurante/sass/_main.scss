@@ -1,0 +1,17 @@
+$sombra:0px 0px 15px rgba(0,0,0,0.35);
+
+.main{
+    background:url('../img/bg-textura.png');
+    background-repeat: repeat;
+
+    @import "acerca-de";
+
+    @import "menu";
+
+    @import "galeria";
+    
+    @import "ubicacion";
+    
+    @import "mapa";
+
+}
