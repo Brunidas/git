@@ -1,0 +1,111 @@
+$font-family:'Slabo 27px',Sans-serif;
+$font-size: 18px;
+$border-radius-sexo :3px 0 0 3px; 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+.contenedor{
+    width: 400px;
+    margin: 40px auto;
+    .formulario{
+        .contenedor-inputs{
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 6px 6px 0 0;
+        }
+
+        input[type="text"],
+        input[type="email"]{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 15px 10px;
+            border:none;
+            border-bottom: 2px solid #ccc;
+            font-family: $font-family;
+            font-size: $font-size;
+
+            &:focus{
+                border-bottom: 2px solid #246be9;
+            }
+        }
+
+        input[type="radio"]{
+            display: none;
+            &:checked + .label-radio{
+                background: rgb(249, 160, 63);
+            }
+        }
+
+        .sexo{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .hombre{
+                border-radius: $border-radius-sexo;
+            }
+            .mujer{
+                border-radius: $border-radius-sexo;
+            }
+
+            .label-radio{
+                background: rgba(249, 160, 63, .4);
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+                width: 49.5%;
+            }
+        }
+
+        .terminos{
+            text-align: center;
+            color: #424242;
+            .label{
+                margin-left: 10px;
+            }
+        }
+
+        .error{
+            display: none;
+            margin-top: 20px;
+            border-radius: 3px;
+            background: #ce1818;
+            color: #fff;
+            padding: 15px 10px;
+            padding-left: 40px;
+        }
+
+
+        .btn{
+            width: 100%;
+            text-align: center;
+            background: #246eb9;
+            color: #fff;
+            border:none;
+            display: block;
+            padding: 15px 10px;
+            cursor: pointer;
+            border-radius: 0 0 6px 6px;
+            font-family: $font-family;
+            font-size:$font-size;
+
+            &:hover{
+                background: #4357ad;
+            }
+        }
+    }
+}
+
+

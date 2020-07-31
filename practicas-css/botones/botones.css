@@ -1,0 +1,72 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial, Sans-serif;
+}
+
+div{
+    margin: 20px 0;
+}
+
+.btn{
+    background-color: #61C9A8;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    margin:0px 10px;
+}
+
+/* Efectos */
+.btn:hover{
+    opacity: .8;
+}
+
+/* Tamaños */
+.small{
+    font: size 14px;
+    padding:10px 15px;
+}
+
+.medium{
+    font: size 16px;
+    padding:15px 20px;
+}
+
+.big{
+    font-size: 18px;
+    padding:20px 25px;
+}
+
+.extra-big{
+    font: size 20px;
+    padding:25px 30px;
+}
+
+/* Colores */
+.color{
+    background-color: #ADA8B6;
+    color:#fff;
+}
+
+.color-1{
+    background-color: #E8D9C8;
+    color:#fff;
+}
+
+.color-2{
+    background-color: #4C3B4D;
+    color:#fff;
+}
+
+.color-3{
+    background-color: #A53860;
+    color:#fff;
+}
+
+/* Efectos */
+.border-radius{
+    border-radius: 100px;
+}
+
+
